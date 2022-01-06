@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DBF1FD;
+    font-family: 'Poppins', sans-serif;
+    color: #414141;
+}
+a{
+    text-decoration: none;
+    color: #414141;
+}
+img{
+    max-width: 100%;
+}
+
+.main-area{
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    padding: 1.5rem 3rem;
+    position: relative;
+    overflow: hidden;
+}
+.main-area::after{
+    content: "";
+    display: block;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #EFF4F8;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    opacity: .40;
+    z-index: -10    ;
+}
+/* Header */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .logo{
+    flex-basis: 1;
+}
+#header .logo img{}
+#header .main-menu{
+    flex-basis: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .main-menu ul{
+    display: flex;
+    list-style: none;
+}
+#header .main-menu ul li{
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+}
+#header .main-menu ul li:hover{
+    border-bottom: 2px solid #0FA3F7;
+}
+#header .main-menu ul li:hover a{
+    font-weight: 500;
+}
+#header .main-menu ul li a{
+    font-size: 1.1rem;
+}
+#header .main-menu .more-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ECF2F6;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#header .main-menu .more-icon:hover{
+    border: 1px solid #0FA3F7;
+}
+
+/* Hero Section */
+#hero-setion{
+    display: flex;
+    align-items: center;
+}
+#hero-setion .text-area{
+    flex: 0 1 auto;
+}
+#hero-setion .text-area .heading{
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+#hero-setion .text-area p{
+    font-size: 14px;
+    opacity: .5;
+}
+#hero-setion .media-section{
+    flex: 0 1 auto;
+}
+#hero-setion .media-section img{}
